@@ -17,6 +17,7 @@
 \usepackage{parskip}
 \usepackage{hyperref}
 \usepackage{ragged2e}
+\usepackage{graphicx}
 
 % Artivisi Colors
 \definecolor{primary}{HTML}{2e3192}
@@ -51,22 +52,23 @@
 \titlespacing*{\section}{0pt}{0.8em}{0.4em}
 
 % Custom commands
-\newcommand{\cvheader}[5]{%
-    \begin{center}
+\newcommand{\cvheader}[6]{%
+    \noindent
+    \begin{minipage}[t]{0.82\textwidth}
         {\Huge\bfseries\color{primary} #1}\\[0.2em]
         {\large\color{darkgray} #2}\\[0.4em]
         {\small\color{medgray}
             \faIcon{envelope} \href{mailto:#3}{#3} \enspace\textbar\enspace
             \faIcon{phone} #4 \enspace\textbar\enspace
             \faIcon{globe} \href{https://#5}{#5}
-        }
-    \end{center}
-}
-
-\newcommand{\cvlocation}[1]{%
-    \begin{center}
-        {\small\color{medgray} \faIcon{map-marker-alt} #1}
-    \end{center}
+        }\\[0.2em]
+        {\small\color{medgray} \faIcon{map-marker-alt} #6}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[t]{0.15\textwidth}
+        \raggedleft
+        \includegraphics[width=2cm]{../src/contact-qr.png}
+    \end{minipage}
     \vspace{0.4em}
 }
 
@@ -107,8 +109,7 @@
 \begin{document}
 
 % Header
-\cvheader{$personal.firstname$ $personal.familyname$}{$personal.title$}{$personal.email$}{$personal.phone$}{$personal.homepage$}
-\cvlocation{$personal.address.city$, $personal.address.region$}
+\cvheader{$personal.firstname$ $personal.familyname$}{$personal.title$}{$personal.email$}{$personal.phone$}{$personal.homepage$}{$personal.address.city$, $personal.address.region$}
 
 % Summary
 $if(summary)$

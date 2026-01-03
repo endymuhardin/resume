@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Endy Muhardin
+N:Muhardin;Endy;;;
+TITLE:IT Consultant
+ORG:ArtiVisi Intermedia
+TEL;TYPE=CELL:+62 812 98000 468
+EMAIL;TYPE=HOME:endy.muhardin@gmail.com
+EMAIL;TYPE=WORK:endy@artivisi.com
+EMAIL;TYPE=WORK:endy@tazkia.ac.id
+URL:https://software.endy.muhardin.com
+END:VCARD
