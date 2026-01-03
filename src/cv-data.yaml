@@ -95,6 +95,13 @@ software_development:
     tech: Keycloak, PostgreSQL, OpenLDAP, HAProxy, Ansible, Docker
 
   - year: "2025"
+    project: HSM Simulator
+    client: ArtiVisi Intermedia
+    role: Software Architect, Lead Programmer
+    description: Educational HSM simulator for payment training with PIN encryption, MAC generation, key ceremony, and inter-bank key exchange
+    tech: Java 21, Spring Boot, PostgreSQL, AES-256, ISO-8583 PIN Blocks
+
+  - year: "2025"
     project: Sharia Banking System
     client: ArtiVisi Intermedia
     role: Software Architect, Lead Programmer
@@ -106,7 +113,7 @@ software_development:
     client: ArtiVisi Intermedia
     role: Software Architect, Lead Programmer
     description: SMB accounting with Indonesian tax compliance (PPN, PPh), payroll, fixed assets, inventory
-    tech: Spring Boot, PostgreSQL, Thymeleaf, HTMX, Alpine.js, ZAP DAST
+    tech: Spring Boot, PostgreSQL, Thymeleaf, HTMX, Alpine.js, ZAP DAST, Ansible, Pulumi
 
   - year: "2024"
     project: Islamic Education Management
