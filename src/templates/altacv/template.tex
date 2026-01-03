@@ -1,0 +1,107 @@
+%!TEX program = lualatex
+
+\documentclass[9pt,a4paper,ragged2e,withhyper]{altacv}
+
+\geometry{left=1cm,right=1cm,top=1.2cm,bottom=1.2cm,columnsep=0.8cm}
+
+\usepackage{paracol}
+
+% Change the colours if you want to
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\begin{document}
+\name{$personal.firstname$ $personal.familyname$}
+\tagline{$personal.title$}
+
+\personalinfo{
+  \email{$personal.email$}
+  \phone{$personal.phone$}
+  \location{$personal.address.city$, $personal.address.region$}
+  \homepage{$personal.homepage$}
+}
+
+\makecvheader
+
+\columnratio{0.55}
+
+\begin{paracol}{2}
+
+$if(summary)$
+\cvsection{Summary}
+$summary$
+$endif$
+
+\cvsection{Experience}
+$for(experience)$
+\cvevent{$experience.role$}{$experience.organization$}{$experience.year$}{$experience.location$}
+\begin{itemize}
+\item $experience.description$
+\end{itemize}
+\smallskip
+$endfor$
+
+\cvsection{Selected Projects}
+$for(software_development)$
+\cvevent{$software_development.project$}{$software_development.client$}{$software_development.year$}{}
+\begin{itemize}
+\item $software_development.description$
+$if(software_development.tech)$\item \textit{$software_development.tech$}$endif$
+\end{itemize}
+\smallskip
+$endfor$
+
+\switchcolumn
+
+\cvsection{Skills}
+$for(skills)$
+\cvtag{$skills.category$}
+$endfor$
+
+\smallskip
+
+$for(skills)$
+\textbf{$skills.category$:} $skills.items$
+
+\smallskip
+$endfor$
+
+\cvsection{Training Topics}
+$for(training_topics)$
+\cvtag{$training_topics.topic$}
+$endfor$
+
+\cvsection{Education}
+$for(education)$
+\cvevent{$education.degree$}{$education.institution$}{$education.year$}{$education.location$}
+\smallskip
+$endfor$
+
+\cvsection{Consulting}
+$for(consulting)$
+\cvevent{$consulting.topic$}{$consulting.client$}{$consulting.year$}{}
+\smallskip
+$endfor$
+
+\end{paracol}
+
+\end{document}

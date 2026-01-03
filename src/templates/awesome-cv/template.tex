@@ -1,0 +1,121 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Color for highlights
+\colorlet{awesome}{awesome-red}
+
+% Colors for text
+\definecolor{darktext}{HTML}{414141}
+\definecolor{text}{HTML}{333333}
+\definecolor{graytext}{HTML}{5D5D5D}
+\definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+\name{$personal.firstname$}{$personal.familyname$}
+\position{$personal.title$}
+\address{$personal.address.city$, $personal.address.region$}
+
+\mobile{$personal.phone$}
+\email{$personal.email$}
+\homepage{$personal.homepage$}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+\makecvheader[C]
+
+$if(summary)$
+\cvsection{Summary}
+\begin{cvparagraph}
+$summary$
+\end{cvparagraph}
+$endif$
+
+\cvsection{Skills}
+\begin{cvskills}
+$for(skills)$
+  \cvskill{$skills.category$}{$skills.items$}
+$endfor$
+\end{cvskills}
+
+\cvsection{Experience}
+\begin{cventries}
+$for(experience)$
+  \cventry
+    {$experience.role$}
+    {$experience.organization$}
+    {$experience.location$}
+    {$experience.year$}
+    {
+      \begin{cvitems}
+        \item {$experience.description$}
+      \end{cvitems}
+    }
+$endfor$
+\end{cventries}
+
+\cvsection{Selected Projects}
+\begin{cventries}
+$for(software_development)$
+  \cventry
+    {$software_development.role$}
+    {$software_development.project$}
+    {$software_development.client$}
+    {$software_development.year$}
+    {
+      \begin{cvitems}
+        \item {$software_development.description$}
+        $if(software_development.tech)$\item {\textit{$software_development.tech$}}$endif$
+      \end{cvitems}
+    }
+$endfor$
+\end{cventries}
+
+\cvsection{Consulting}
+\begin{cventries}
+$for(consulting)$
+  \cventry
+    {$consulting.topic$}
+    {$consulting.client$}
+    {}
+    {$consulting.year$}
+    {
+      \begin{cvitems}
+        \item {$consulting.description$}
+      \end{cvitems}
+    }
+$endfor$
+\end{cventries}
+
+\cvsection{Training Expertise}
+\begin{cvskills}
+$for(training_topics)$
+  \cvskill{$training_topics.topic$}{$training_topics.description$ -- \textit{$training_topics.clients$}}
+$endfor$
+\end{cvskills}
+
+\cvsection{Education}
+\begin{cventries}
+$for(education)$
+  \cventry
+    {$education.degree$}
+    {$education.institution$}
+    {$education.location$}
+    {$education.year$}
+    {}
+$endfor$
+\end{cventries}
+
+\end{document}
