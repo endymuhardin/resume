@@ -1,0 +1,136 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[$style.color$]{$style.theme$}
+
+% character encoding
+\usepackage[utf8]{inputenc}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+
+% personal data
+\firstname{$personal.firstname$}
+\familyname{$personal.familyname$}
+\title{$personal.title$}
+\address{$personal.address.city$}{$personal.address.region$}
+\phone{$personal.phone$}
+\email{$personal.email$}
+\homepage{$personal.homepage$}
+
+% Change default font to Lato
+\usepackage[default]{lato}
+\usepackage[T1]{fontenc}
+
+% Advanced Font Customization
+\renewcommand*\namefont{\fontfamily{fve}\fontseries{b}\fontsize{32}{48}\selectfont}
+\renewcommand*\addressfont{\fontfamily{fve}\fontseries{m}\fontshape{it}\selectfont}
+\renewcommand*\sectionfont{\fontfamily{pzc}\fontsize{20}{24}\selectfont}
+
+% to show numerical labels in the bibliography
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+\lfoot{\color{lightgray}\textit{\tiny{last update $style.last_update$}}}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+$if(summary)$
+\section{Professional Summary}
+\cvline{}{$summary$}
+$endif$
+
+\section{Core Competencies}
+
+$for(skills)$
+\cvline{$skills.category$}{\small $skills.items$}
+$endfor$
+
+\section{Working Experience}
+
+$for(experience)$
+$if(experience.url)$
+\cventry{$experience.year$}{\href{$experience.url$}{$experience.organization$}}{$experience.role$}{$experience.location$}{}
+$else$
+\cventry{$experience.year$}{$experience.organization$}{$experience.role$}{$experience.location$}{}
+$endif$
+{$experience.description$}
+
+$endfor$
+
+\section{Selected Projects}
+
+$for(software_development)$
+$if(software_development.client_url)$
+\cventry{$software_development.year$}{$software_development.project$}{\href{$software_development.client_url$}{$software_development.client$}}{$software_development.role$}{}
+$else$
+\cventry{$software_development.year$}{$software_development.project$}{$software_development.client$}{$software_development.role$}{}
+$endif$
+{$software_development.description$$if(software_development.tech)$
+\newline{} \textit{$software_development.tech$}$endif$}
+
+$endfor$
+
+\section{Consulting Engagements}
+
+$for(consulting)$
+$if(consulting.client_url)$
+\cventry{$consulting.year$}{\href{$consulting.client_url$}{$consulting.client$}}{$consulting.topic$}{}{}
+$else$
+\cventry{$consulting.year$}{$consulting.client$}{$consulting.topic$}{}{}
+$endif$
+{$consulting.description$$if(consulting.tech)$
+\newline{} \textit{$consulting.tech$}$endif$}
+
+$endfor$
+
+\section{Training Expertise}
+
+$for(training_topics)$
+\cvline{$training_topics.topic$}{$training_topics.description$
+\newline{}\textit{Clients: $training_topics.clients$}}
+
+$endfor$
+
+\section{Open Source Projects}
+
+$for(opensource)$
+\subsection{\href{$opensource.url$}{$opensource.name$}}
+\cvline{Description}{$opensource.description$}
+$if(opensource.platform)$
+\cvline{Platform}{$opensource.platform$}
+$endif$
+$if(opensource.framework)$
+\cvline{Framework}{$opensource.framework$}
+$endif$
+$if(opensource.language)$
+\cvline{Language}{$opensource.language$}
+$endif$
+\cvline{Role}{$opensource.role$}
+
+$endfor$
+
+\section{Publications}
+
+$for(writings)$
+$if(writings.url)$
+\cventry{$writings.year$}{$writings.publisher$}{\href{$writings.url$}{$writings.title$}}{}{}
+$else$
+\cventry{$writings.year$}{$writings.publisher$}{$writings.title$}{}{}
+$endif$
+{$writings.description$}
+
+$endfor$
+
+\section{Education}
+
+$for(education)$
+\cventry{$education.year$}{$education.degree$}{$education.institution$}{$education.location$}{\textit{$education.grade$}}{}
+$endfor$
+
+\end{document}

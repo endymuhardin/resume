@@ -1,0 +1,323 @@
+personal:
+  firstname: Endy
+  familyname: Muhardin
+  title: IT Consultant
+  address:
+    city: Kabupaten Bogor
+    region: West Java, Indonesia
+  phone: "+62 812 98000 468"
+  email: endy@muhardin.com
+  homepage: software.endy.muhardin.com
+
+style:
+  theme: classic
+  color: red
+  last_update: "20260103"
+
+summary: |
+  IT Consultant with 20+ years of experience in software architecture,
+  enterprise application development, and process improvement.
+  Specialized in payment systems, microservices architecture, and DevSecOps practices.
+  Delivered 40+ corporate trainings and helped multiple organizations achieve CMMI Level 3.
+
+skills:
+  - category: Architecture
+    items: Microservices, REST API, Event-Driven, OAuth/SSO
+
+  - category: Programming
+    items: Java, Spring Boot, Spring Cloud, Hibernate
+
+  - category: Payment Systems
+    items: ISO-8583, Payment Gateway, ATM/EDC Integration
+
+  - category: DevSecOps
+    items: Docker, Kubernetes, CI/CD, SAST (SpotBugs, CodeQL), DAST (OWASP ZAP)
+
+  - category: Infrastructure
+    items: Linux Administration, Cloud Services, Performance Tuning
+
+  - category: Process
+    items: CMMI, Scrum, Software Engineering, Quality Management
+
+  - category: Domain
+    items: Banking, Insurance, Government, Education
+
+experience:
+  - year: "2024--now"
+    organization: STMIK Tazkia
+    url: https://www.tazkia.ac.id
+    role: Vice Chairman, Lecturer
+    location: Bogor
+    description: In charge of curriculum and quality assurance
+
+  - year: "2008--now"
+    organization: ArtiVisi Intermedia
+    url: http://www.artivisi.com
+    role: Senior Consultant
+    location: Jakarta
+    description: Analyse customer requirement, propose, and implement solution. Provide expertise on software architecture, project management, and software development process improvement
+
+  - year: "2006--now"
+    organization: Brainmatics
+    url: http://www.brainmatics.com
+    role: Trainer
+    location: Jakarta
+    description: Delivers training material on project management, software development, testing, and programming
+
+  - year: "2017--2024"
+    organization: Universitas Tazkia
+    url: https://www.tazkia.ac.id
+    role: IT Dept Head, Lecturer
+    location: Bogor
+    description: Manage IT department, develop campus information systems, lecture on programming
+
+  - year: "2005--2008"
+    organization: BaliCamp
+    role: Software Engineering Process Group
+    description: "Research and implement corporate-wide process and procedure compliant with CMMI requirement. Achieved CMMI ML-3 in 2007"
+
+  - year: "2004--2005"
+    organization: Telematics Indonesia
+    role: Lead Programmer
+    description: Design software and write code on various client project
+
+  - year: "2003--2004"
+    organization: Enciety
+    role: Lead Programmer
+    description: Develop core banking application
+
+software_development:
+  - year: "2025"
+    project: High Availability SSO Infrastructure
+    client: PT Kereta Api Indonesia
+    role: Software Architect, Lead Programmer
+    description: Production-ready Keycloak SSO with PostgreSQL replication, OpenLDAP federation, HAProxy load balancing
+    tech: Keycloak, PostgreSQL, OpenLDAP, HAProxy, Ansible, Docker
+
+  - year: "2025"
+    project: Sharia Banking System
+    client: ArtiVisi Intermedia
+    role: Software Architect, Lead Programmer
+    description: Sharia-compliant banking with Wadiah, Mudharabah savings, Islamic financing products, approval workflows
+    tech: Java 21, Spring Boot, PostgreSQL, Thymeleaf, Tailwind CSS
+
+  - year: "2025"
+    project: Accounting System
+    client: ArtiVisi Intermedia
+    role: Software Architect, Lead Programmer
+    description: SMB accounting with Indonesian tax compliance (PPN, PPh), payroll, fixed assets, inventory
+    tech: Spring Boot, PostgreSQL, Thymeleaf, HTMX, Alpine.js, ZAP DAST
+
+  - year: "2024"
+    project: Islamic Education Management
+    client: Yayasan Sahabat Quran
+    role: Software Architect, Lead Programmer
+    description: Student registration, class scheduling, academic planning, performance analytics
+    tech: Spring Boot, PostgreSQL, Thymeleaf, Bootstrap
+
+  - year: "2023"
+    project: Sharia Insurance Onboarding
+    client: Client Undisclosed
+    role: Software Architect, Lead Programmer
+    description: New customer registration, underwriting, payment integration
+    tech: Java, Spring, Microservice, SOAP
+
+  - year: "2022"
+    project: Seaport Management System
+    client: Pelabuhan Tiga Bersaudara
+    role: Software Architect, Lead Programmer
+    description: Pilotage Management, Integration with Kemenhub App, Integration with Bank Payment
+    tech: Java, Spring, Microservice, SOAP
+
+  - year: "2018"
+    project: Virtual Account Integration
+    client: STEI Tazkia
+    role: Software Architect, Lead Programmer
+    description: Integrating automated virtual account payment from 3 banks (BSM, BNI, CIMB)
+    tech: Java, Spring, Microservice, REST, SOAP
+
+  - year: "2017"
+    project: Academic Information System
+    client: STEI Tazkia
+    role: Software Architect, Lead Programmer
+    description: Students Enrollment, Tuition Fee Payment, Academic Administration, HR, etc
+    tech: Java, Spring, Microservice, OAuth
+
+  - year: "2013"
+    project: Payment Switching System
+    client: ArtiVisi Intermedia
+    role: Software Architect, Lead Programmer
+    description: Switching application connecting and intermediating among multiple payment endpoint
+    tech: Java, ISO-8583
+
+  - year: "2011"
+    project: Payment Gateway System
+    client: ArtiVisi Intermedia
+    role: Software Architect, Lead Programmer
+    description: Front office and back office application for billing payment outlet
+    tech: HTML, JavaScript, Java, ISO-8583
+
+  - year: "2010"
+    project: EDC Server
+    client: G4S Euronet
+    role: Software Architect, Lead Programmer
+    description: Server application for managing multiple EDC devices
+    tech: Java, ISO-8583
+
+  - year: "2008"
+    project: ATM Integration
+    client: Bank Windu Kencana Indonesia
+    client_url: http://www.bankwindu.com/
+    role: Software Architect, Lead Programmer
+    description: Connecting between core banking application and ATM BCA network
+    tech: Java, Spring Framework, Hibernate, ISO-8583
+
+consulting:
+  - year: "2023"
+    client: Lembaga Administrasi Negara
+    client_url: https://www.lan.go.id/
+    topic: DevOps Best Practices
+    description: Guide internal DevOps process improvement to follow industry best practices
+    tech: DevOps, Continuous Integration/Delivery
+
+  - year: "2022"
+    client: PT Telkomsel
+    client_url: https://www.telkomsel.com/
+    topic: Software Engineer Competence Standard
+    description: Develop corporate standard for software engineer competence
+    tech: Engineering Management, Skill and Competence
+
+  - year: "2021"
+    client: PT Kereta Api Indonesia
+    client_url: https://www.kai.id/
+    topic: Single Sign On Implementation
+    description: Implement Single Sign On, integrate with network gateway and internal app
+    tech: Keycloak, Single Sign On, OAuth, OpenID Connect, SAML
+
+  - year: "2018"
+    client: ICON+
+    client_url: http://www.iconpln.co.id/
+    topic: CMMI Dev Implementation
+    description: Help ICON+ to achieve CMMI Dev Maturity Level 3
+    tech: CMMI, Process Improvement, Quality Management
+
+  - year: "2018"
+    client: Jurnal.id
+    client_url: https://jurnal.id/
+    topic: Application Architecture Best Practices
+    description: Assess coding practices, review source code, provide improvement ideas
+    tech: Java, Code Review, Architecture Improvement
+
+  - year: "2017"
+    client: Abhimata Persada
+    client_url: http://www.ptap.co.id/
+    topic: CMMI Dev Implementation
+    description: Help Abhimata to achieve CMMI Dev Maturity Level 3
+    tech: CMMI, Scrum, Process Improvement
+
+  - year: "2015"
+    client: Anabatic Technologies
+    client_url: https://www.anabatic.com/
+    topic: CMMI Dev Implementation
+    description: Help Anabatic to achieve CMMI Dev Maturity Level 3
+    tech: CMMI, Scrum, Process Improvement
+
+  - year: "2013"
+    client: VeriTrans
+    client_url: https://www.veritrans.co.id/
+    topic: Java Application Best Practices
+    description: Reviews application architecture, provides insight on design best practices
+    tech: Java, Maven, Spring Data JPA
+
+training_topics:
+  - topic: Site Reliability Engineering
+    description: SRE Fundamentals, Linux Administration, Docker, High Availability, Incident Response
+    clients: ArtaJasa
+
+  - topic: Microservices Architecture
+    description: Spring Cloud, API Gateway, Service Discovery, Config Server
+    clients: Bank BCA, Blanja.com, Generali Insurance, Chubb Insurance
+
+  - topic: DevSecOps & Kubernetes
+    description: Docker, Kubernetes, CI/CD, SAST/DAST Integration, Security Scanning Pipelines
+    clients: Ditjen Bea Cukai, Asuransi Kredit Indonesia, Bank BCA
+
+  - topic: Payment Systems (ISO-8583)
+    description: Payment Gateway, ATM/EDC Integration, Bank Switching, Spring Boot + jPOS
+    clients: Bank BCA, Visionet Data Internasional, Induk Koperasi Kredit
+
+  - topic: Java & Spring Framework
+    description: Spring Boot, Spring Security, JPA, REST API, Reactive Programming
+    clients: TelkomSigma, Bank Jateng, Doku, eBDesk, Pegadaian, Ministry of Finance
+
+  - topic: Application Security
+    description: OWASP Top 10, SAST (SpotBugs, CodeQL), DAST (OWASP ZAP), OAuth 2.0, SSO
+    clients: MTI/Yokke, Indonesian Government, Direktorat Jenderal Pajak
+
+  - topic: Automated Testing
+    description: Selenium, Functional Testing, Test Automation
+    clients: Kemenkominfo, Brainmatics
+
+  - topic: CMMI & Process Improvement
+    description: CMMI Dev, SCAMPI-A, Process Definition, Quality Management
+    clients: Anabatic, Brainmatics, Traspac
+
+opensource:
+  - name: Campus Application Suite
+    url: http://gitlab.com/tazkia.ac.id
+    description: Campus Administration, HRIS, Finance, Accounting, Enrollment, etc
+    platform: Java, MySQL, PostgreSQL, Kafka
+    framework: Spring Boot, Spring Cloud
+    role: Project Owner, Software Architect, Lead Programmer
+
+  - name: Biller Simulator
+    url: http://github.com/artivisi/biller-simulator
+    description: Simulator for bill payment system
+    platform: Java, Tomcat, MySQL
+    framework: Java, JSF, JPOS, ISO-8583
+    role: Project Owner, Lead Programmer
+
+  - name: Web Application Template
+    url: http://github.com/artivisi/standard-webapp-archetype
+    description: Application generator for Java web application
+    platform: Java, Tomcat, MySQL
+    framework: Java, Spring Data JPA, Hibernate, Maven
+    role: Project Owner, Lead Programmer
+
+  - name: PlaySMS
+    url: http://playsms.org
+    description: SMS Gateway Management
+    platform: Linux, Windows, MySQL
+    language: PHP
+    role: Committer
+
+writings:
+  - year: "2012"
+    publisher: ArtiVisi Intermedia
+    title: Markdown dan Pandoc
+    url: https://sites.google.com/site/endymuhardin/markdown-dan-pandoc.pdf?attredirects=0&d=1
+    description: Using markdown format and pandoc for authoring books and presentations
+
+  - year: "2009"
+    publisher: ArtiVisi Intermedia
+    title: Minibook Log4j
+    url: https://sites.google.com/site/endymuhardin/minibook-log4j.pdf?attredirects=0&d=1
+    description: Application logging concepts and implementation using Log4J
+
+  - year: "2009"
+    publisher: ArtiVisi Intermedia
+    title: Konsep dan Penggunaan Subversion
+    description: Version control concepts, use cases, and implementation using Subversion
+
+education:
+  - year: "2020"
+    degree: Islamic Economy
+    institution: Institut Agama Islam Tazkia
+    location: Bogor
+    grade: Magister Ekonomi
+
+  - year: "1997--2001"
+    degree: Teknik Industri
+    institution: STT Telkom
+    location: Bandung
+    grade: Sarjana Teknik
