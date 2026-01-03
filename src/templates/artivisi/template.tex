@@ -1,0 +1,166 @@
+%% Artivisi CV Template - Clean, Professional, Compact
+%% Custom design using Artivisi brand colors
+
+\documentclass[10pt,a4paper]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1.2cm,top=1cm,bottom=1cm]{geometry}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{parskip}
+\usepackage{hyperref}
+\usepackage{ragged2e}
+
+% Artivisi Colors
+\definecolor{primary}{HTML}{2e3192}
+\definecolor{accent}{HTML}{58c034}
+\definecolor{darkgray}{HTML}{333333}
+\definecolor{medgray}{HTML}{555555}
+\definecolor{lightgray}{HTML}{888888}
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primary,
+    urlcolor=primary,
+    pdfborder={0 0 0}
+}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Paragraph settings
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% Section formatting - clean line with accent color
+\titleformat{\section}
+    {\vspace{0.5em}\large\bfseries\color{primary}}
+    {}
+    {0pt}
+    {}
+    [\vspace{0.1em}{\color{accent}\hrule height 1.5pt}\vspace{0.3em}]
+
+\titlespacing*{\section}{0pt}{0.8em}{0.4em}
+
+% Custom commands
+\newcommand{\cvheader}[5]{%
+    \begin{center}
+        {\Huge\bfseries\color{primary} #1}\\[0.2em]
+        {\large\color{darkgray} #2}\\[0.4em]
+        {\small\color{medgray}
+            \faIcon{envelope} \href{mailto:#3}{#3} \enspace\textbar\enspace
+            \faIcon{phone} #4 \enspace\textbar\enspace
+            \faIcon{globe} \href{https://#5}{#5}
+        }
+    \end{center}
+}
+
+\newcommand{\cvlocation}[1]{%
+    \begin{center}
+        {\small\color{medgray} \faIcon{map-marker-alt} #1}
+    \end{center}
+    \vspace{0.4em}
+}
+
+\newcommand{\cventry}[4]{%
+    \textbf{#1} {\color{primary}|} \textit{#2} \hfill {\small\color{lightgray}#3}\\[-0.2em]
+    {\small\color{darkgray}#4}\\[0.4em]
+}
+
+\newcommand{\cvproject}[4]{%
+    \textbf{#1} {\small\color{medgray}-- #2} \hfill {\small\color{lightgray}#3}\\[-0.2em]
+    {\small\color{darkgray}#4}\\[0.4em]
+}
+
+\newcommand{\cvskill}[2]{%
+    {\small\textbf{\color{primary}#1:} #2}\\[0.15em]
+}
+
+\newcommand{\cvconsult}[3]{%
+    \textbf{#1} {\small\color{medgray}-- #2} \hfill {\small\color{lightgray}#3}\\[0.3em]
+}
+
+\newcommand{\cvedu}[4]{%
+    \textbf{#1} \hfill {\small\color{lightgray}#3}\\[-0.2em]
+    {\small\textit{#2} \hfill \color{lightgray}#4}\\[0.3em]
+}
+
+\newcommand{\cvtraining}[3]{%
+    {\small\textbf{\color{primary}#1} -- #2 {\color{lightgray}\textit{(#3)}}}\\[0.2em]
+}
+
+\newcommand{\cvtag}[1]{%
+    \fbox{\small\strut#1}\hspace{0.1em}%
+}
+
+% Reduce list spacing
+\setlist[itemize]{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt,leftmargin=1em}
+
+\begin{document}
+
+% Header
+\cvheader{$personal.firstname$ $personal.familyname$}{$personal.title$}{$personal.email$}{$personal.phone$}{$personal.homepage$}
+\cvlocation{$personal.address.city$, $personal.address.region$}
+
+% Summary
+$if(summary)$
+\section{PROFILE}
+{\small $summary$}
+$endif$
+
+% Skills - Two column layout
+\section{TECHNICAL COMPETENCIES}
+\begin{multicols}{2}
+\raggedright
+$for(skills)$
+\cvskill{$skills.category$}{$skills.items$}
+$endfor$
+\end{multicols}
+
+% Experience
+\section{PROFESSIONAL EXPERIENCE}
+$for(experience)$
+\cventry{$experience.role$}{$experience.organization$}{$experience.year$}{$experience.description$}
+$endfor$
+
+% Projects
+\section{SELECTED PROJECTS}
+$for(software_development)$
+\cvproject{$software_development.project$}{$software_development.client$}{$software_development.year$}{$software_development.description$$if(software_development.tech)$ \textit{\small\color{lightgray}[$software_development.tech$]}$endif$}
+$endfor$
+
+% Training Topics - Compact list
+\section{TRAINING EXPERTISE}
+\begin{multicols}{2}
+\raggedright
+$for(training_topics)$
+\cvtraining{$training_topics.topic$}{$training_topics.description$}{$training_topics.clients$}
+$endfor$
+\end{multicols}
+
+% Consulting
+\section{CONSULTING ENGAGEMENTS}
+$for(consulting)$
+\cvconsult{$consulting.topic$}{$consulting.client$}{$consulting.year$}
+$endfor$
+
+% Education
+\section{EDUCATION}
+$for(education)$
+\cvedu{$education.degree$}{$education.institution$}{$education.year$}{$education.location$}
+$endfor$
+
+\vfill
+\begin{center}
+{\scriptsize\color{lightgray} Last updated: $style.last_update$}
+\end{center}
+
+\end{document}

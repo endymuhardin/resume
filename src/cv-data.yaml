@@ -30,6 +30,9 @@ skills:
   - category: Payment Systems
     items: ISO-8583, Payment Gateway, ATM/EDC Integration
 
+  - category: Domain
+    items: Banking, Insurance, Government, Education
+
   - category: DevSecOps
     items: Docker, Kubernetes, CI/CD, SAST (SpotBugs, CodeQL), DAST (OWASP ZAP)
 
@@ -38,9 +41,6 @@ skills:
 
   - category: Process
     items: CMMI, Scrum, Software Engineering, Quality Management
-
-  - category: Domain
-    items: Banking, Insurance, Government, Education
 
 experience:
   - year: "2024--now"
