@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endy Muhardin - IT Consultant</title>
+    <style>
+        :root {
+            --primary: #2e3192;
+            --accent: #58c034;
+            --text: #333;
+            --light: #666;
+            --border: #ddd;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 3px solid var(--primary);
+        }
+        h1 { font-size: 2.5rem; color: var(--primary); margin-bottom: 0.25rem; }
+        .tagline { font-size: 1.25rem; color: var(--light); margin-bottom: 1rem; }
+        .contact { font-size: 0.9rem; color: var(--light); }
+        .contact a { color: var(--primary); text-decoration: none; }
+        .contact span { margin: 0 0.5rem; }
+        section { margin-bottom: 2rem; }
+        h2 {
+            color: var(--primary);
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 0.25rem;
+            margin-bottom: 1rem;
+        }
+        .summary { font-size: 1rem; color: var(--light); }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 0.75rem;
+        }
+        .skill-item strong { color: var(--primary); }
+        .entry { margin-bottom: 1.25rem; }
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .entry-title { font-weight: bold; }
+        .entry-org { color: var(--primary); }
+        .entry-meta { color: var(--light); font-size: 0.9rem; }
+        .entry-desc { margin-top: 0.25rem; color: var(--light); font-size: 0.95rem; }
+        .tech { font-style: italic; font-size: 0.85rem; color: var(--light); }
+        .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; }
+        .tag {
+            background: var(--accent);
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 3px;
+            font-size: 0.8rem;
+        }
+        .pdf-links {
+            background: #f5f5f5;
+            padding: 1rem;
+            border-radius: 5px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .pdf-links a {
+            display: inline-block;
+            margin: 0.25rem 0.5rem;
+            padding: 0.5rem 1rem;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 3px;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+        .pdf-links a:hover { background: var(--accent); }
+        footer {
+            text-align: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            color: var(--light);
+            font-size: 0.85rem;
+        }
+        @media (max-width: 600px) {
+            body { padding: 1rem; }
+            h1 { font-size: 1.8rem; }
+            .entry-header { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Endy Muhardin</h1>
+        <div class="tagline">IT Consultant</div>
+        <div class="contact">
+            <a href="mailto:endy@muhardin.com">endy@muhardin.com</a>
+            <span>|</span>
+            +62 812 98000 468
+            <span>|</span>
+            <a href="https://software.endy.muhardin.com">software.endy.muhardin.com</a>
+            <span>|</span>
+            Kabupaten Bogor, West Java, Indonesia
+        </div>
+    </header>
+
+    <div class="pdf-links">
+        <strong>Download PDF:</strong>
+        <a href="output/cv-endy-20260103-moderncv.pdf">ModernCV</a>
+        <a href="output/cv-endy-20260103-altacv.pdf">AltaCV</a>
+        <a href="output/cv-endy-20260103-jakes.pdf">Jake's Resume</a>
+    </div>
+
+    <section>
+        <h2>Summary</h2>
+        <p class="summary"><p>IT Consultant with 20+ years of experience
+in software architecture, enterprise application development, and
+process improvement. Specialized in payment systems, microservices
+architecture, and DevSecOps practices. Delivered 40+ corporate trainings
+and helped multiple organizations achieve CMMI Level 3.</p></p>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item"><strong>Architecture:</strong> Microservices,
+REST API, Event-Driven, OAuth/SSO</div>
+            <div class="skill-item"><strong>Programming:</strong> Java,
+Spring Boot, Spring Cloud, Hibernate</div>
+            <div class="skill-item"><strong>Payment
+Systems:</strong> ISO-8583, Payment Gateway, ATM/EDC Integration</div>
+            <div class="skill-item"><strong>DevSecOps:</strong> Docker,
+Kubernetes, CI/CD, SAST (SpotBugs, CodeQL), DAST (OWASP ZAP)</div>
+            <div class="skill-item"><strong>Infrastructure:</strong> Linux
+Administration, Cloud Services, Performance Tuning</div>
+            <div class="skill-item"><strong>Process:</strong> CMMI,
+Scrum, Software Engineering, Quality Management</div>
+            <div class="skill-item"><strong>Domain:</strong> Banking,
+Insurance, Government, Education</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Experience</h2>
+        <div class="entry">
+            <div class="entry-header">
+                <span><span class="entry-title">Vice Chairman,
+Lecturer</span> <span class="entry-org">@ STMIK Tazkia</span></span>
+                <span class="entry-meta">2024–now | Bogor</span>
+            </div>
+            <div class="entry-desc">In charge of curriculum and quality
+assurance</div>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span><span class="entry-title">Senior
+Consultant</span> <span class="entry-org">@ ArtiVisi
+Intermedia</span></span>
+                <span class="entry-meta">2008–now | Jakarta</span>
+            </div>
+            <div class="entry-desc">Analyse customer requirement,
+propose, and implement solution. Provide expertise on software
+architecture, project management, and software development process
+improvement</div>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span><span class="entry-title">Trainer</span> <span class="entry-org">@ Brainmatics</span></span>
+                <span class="entry-meta">2006–now | Jakarta</span>
+            </div>
+            <div class="entry-desc">Delivers training material on
+project management, software development, testing, and programming</div>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span><span class="entry-title">IT Dept Head,
+Lecturer</span> <span class="entry-org">@ Universitas
+Tazkia</span></span>
+                <span class="entry-meta">2017–2024 | Bogor</span>
+            </div>
+            <div class="entry-desc">Manage IT department, develop campus
+information systems, lecture on programming</div>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span><span class="entry-title">Software Engineering
+Process Group</span> <span class="entry-org">@ BaliCamp</span></span>
+                <span class="entry-meta">2005–2008 | </span>
+            </div>
+            <div class="entry-desc">Research and implement
+corporate-wide process and procedure compliant with CMMI requirement.
+Achieved CMMI ML-3 in 2007</div>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span><span class="entry-title">Lead
+Programmer</span> <span class="entry-org">@ Telematics
+Indonesia</span></span>
+                <span class="entry-meta">2004–2005 | </span>
+            </div>
+            <div class="entry-desc">Design software and write code on
+various client project</div>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span><span class="entry-title">Lead
+Programmer</span> <span class="entry-org">@ Enciety</span></span>
+                <span class="entry-meta">2003–2004 | </span>
+            </div>
+            <div class="entry-desc">Develop core banking
+application</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Selected Projects</h2>
+        <div class="entry">
+            <div class="entry-header">
+                <span><span class="entry-title">High Availability SSO
+Infrastructure</span> <span class="entry-org">- PT Kereta Api
+Indonesia</span></span>
+                <span class="entry-meta">2025</span>
+            </div>
+            <div class="entry-desc">Production-ready Keycloak SSO with
+PostgreSQL replication, OpenLDAP federation, HAProxy load
+balancing</div>
+            <div class="tech">Keycloak, PostgreSQL, OpenLDAP, HAProxy,
+Ansible, Docker</div>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span><span class="entry-title">Sharia Banking
+System</span> <span class="entry-org">- ArtiVisi
+Intermedia</span></span>
+                <span class="entry-meta">2025</span>
+            </div>
+            <div class="entry-desc">Sharia-compliant banking with
+Wadiah, Mudharabah savings, Islamic financing products, approval
+workflows</div>
+            <div class="tech">Java 21, Spring Boot, PostgreSQL,
+Thymeleaf, Tailwind CSS</div>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span><span class="entry-title">Accounting
+System</span> <span class="entry-org">- ArtiVisi
+Intermedia</span></span>
+                <span class="entry-meta">2025</span>
+            </div>
+            <div class="entry-desc">SMB accounting with Indonesian tax
+compliance (PPN, PPh), payroll, fixed assets, inventory</div>
+            <div class="tech">Spring Boot, PostgreSQL, Thymeleaf, HTMX,
+Alpine.js, ZAP DAST</div>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span><span class="entry-title">Islamic Education
+Management</span> <span class="entry-org">- Yayasan Sahabat
+Quran</span></span>
+                <span class="entry-meta">2024</span>
+            </div>
+            <div class="entry-desc">Student registration, class
+scheduling, academic planning, performance analytics</div>
+            <div class="tech">Spring Boot, PostgreSQL, Thymeleaf,
+Bootstrap</div>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span><span class="entry-title">Sharia Insurance
+Onboarding</span> <span class="entry-org">- Client
+Undisclosed</span></span>
+                <span class="entry-meta">2023</span>
+            </div>
+            <div class="entry-desc">New customer registration,
+underwriting, payment integration</div>
+            <div class="tech">Java, Spring, Microservice, SOAP</div>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span><span class="entry-title">Seaport Management
+System</span> <span class="entry-org">- Pelabuhan Tiga
+Bersaudara</span></span>
+                <span class="entry-meta">2022</span>
+            </div>
+            <div class="entry-desc">Pilotage Management, Integration
+with Kemenhub App, Integration with Bank Payment</div>
+            <div class="tech">Java, Spring, Microservice, SOAP</div>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span><span class="entry-title">Virtual Account
+Integration</span> <span class="entry-org">- STEI Tazkia</span></span>
+                <span class="entry-meta">2018</span>
+            </div>
+            <div class="entry-desc">Integrating automated virtual
+account payment from 3 banks (BSM, BNI, CIMB)</div>
+            <div class="tech">Java, Spring, Microservice, REST,
+SOAP</div>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span><span class="entry-title">Academic Information
+System</span> <span class="entry-org">- STEI Tazkia</span></span>
+                <span class="entry-meta">2017</span>
+            </div>
+            <div class="entry-desc">Students Enrollment, Tuition Fee
+Payment, Academic Administration, HR, etc</div>
+            <div class="tech">Java, Spring, Microservice, OAuth</div>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span><span class="entry-title">Payment Switching
+System</span> <span class="entry-org">- ArtiVisi
+Intermedia</span></span>
+                <span class="entry-meta">2013</span>
+            </div>
+            <div class="entry-desc">Switching application connecting and
+intermediating among multiple payment endpoint</div>
+            <div class="tech">Java, ISO-8583</div>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span><span class="entry-title">Payment Gateway
+System</span> <span class="entry-org">- ArtiVisi
+Intermedia</span></span>
+                <span class="entry-meta">2011</span>
+            </div>
+            <div class="entry-desc">Front office and back office
+application for billing payment outlet</div>
+            <div class="tech">HTML, JavaScript, Java, ISO-8583</div>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span><span class="entry-title">EDC
+Server</span> <span class="entry-org">- G4S Euronet</span></span>
+                <span class="entry-meta">2010</span>
+            </div>
+            <div class="entry-desc">Server application for managing
+multiple EDC devices</div>
+            <div class="tech">Java, ISO-8583</div>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span><span class="entry-title">ATM
+Integration</span> <span class="entry-org">- Bank Windu Kencana
+Indonesia</span></span>
+                <span class="entry-meta">2008</span>
+            </div>
+            <div class="entry-desc">Connecting between core banking
+application and ATM BCA network</div>
+            <div class="tech">Java, Spring Framework, Hibernate,
+ISO-8583</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Training Expertise</h2>
+        <div class="tags">
+            <span class="tag">Site Reliability Engineering</span>
+            <span class="tag">Microservices Architecture</span>
+            <span class="tag">DevSecOps &amp; Kubernetes</span>
+            <span class="tag">Payment Systems (ISO-8583)</span>
+            <span class="tag">Java &amp; Spring Framework</span>
+            <span class="tag">Application Security</span>
+            <span class="tag">Automated Testing</span>
+            <span class="tag">CMMI &amp; Process Improvement</span>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Site Reliability
+Engineering</span>
+            </div>
+            <div class="entry-desc">SRE Fundamentals, Linux
+Administration, Docker, High Availability, Incident Response</div>
+            <div class="tech">Clients: ArtaJasa</div>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Microservices
+Architecture</span>
+            </div>
+            <div class="entry-desc">Spring Cloud, API Gateway, Service
+Discovery, Config Server</div>
+            <div class="tech">Clients: Bank BCA, Blanja.com, Generali
+Insurance, Chubb Insurance</div>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">DevSecOps &amp;
+Kubernetes</span>
+            </div>
+            <div class="entry-desc">Docker, Kubernetes, CI/CD, SAST/DAST
+Integration, Security Scanning Pipelines</div>
+            <div class="tech">Clients: Ditjen Bea Cukai, Asuransi Kredit
+Indonesia, Bank BCA</div>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Payment Systems
+(ISO-8583)</span>
+            </div>
+            <div class="entry-desc">Payment Gateway, ATM/EDC
+Integration, Bank Switching, Spring Boot + jPOS</div>
+            <div class="tech">Clients: Bank BCA, Visionet Data
+Internasional, Induk Koperasi Kredit</div>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Java &amp; Spring
+Framework</span>
+            </div>
+            <div class="entry-desc">Spring Boot, Spring Security, JPA,
+REST API, Reactive Programming</div>
+            <div class="tech">Clients: TelkomSigma, Bank Jateng, Doku,
+eBDesk, Pegadaian, Ministry of Finance</div>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Application Security</span>
+            </div>
+            <div class="entry-desc">OWASP Top 10, SAST (SpotBugs,
+CodeQL), DAST (OWASP ZAP), OAuth 2.0, SSO</div>
+            <div class="tech">Clients: MTI/Yokke, Indonesian Government,
+Direktorat Jenderal Pajak</div>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Automated Testing</span>
+            </div>
+            <div class="entry-desc">Selenium, Functional Testing, Test
+Automation</div>
+            <div class="tech">Clients: Kemenkominfo, Brainmatics</div>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">CMMI &amp; Process
+Improvement</span>
+            </div>
+            <div class="entry-desc">CMMI Dev, SCAMPI-A, Process
+Definition, Quality Management</div>
+            <div class="tech">Clients: Anabatic, Brainmatics,
+Traspac</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Consulting</h2>
+        <div class="entry">
+            <div class="entry-header">
+                <span><span class="entry-title">DevOps Best
+Practices</span> <span class="entry-org">- Lembaga Administrasi
+Negara</span></span>
+                <span class="entry-meta">2023</span>
+            </div>
+            <div class="entry-desc">Guide internal DevOps process
+improvement to follow industry best practices</div>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span><span class="entry-title">Software Engineer
+Competence Standard</span> <span class="entry-org">- PT
+Telkomsel</span></span>
+                <span class="entry-meta">2022</span>
+            </div>
+            <div class="entry-desc">Develop corporate standard for
+software engineer competence</div>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span><span class="entry-title">Single Sign On
+Implementation</span> <span class="entry-org">- PT Kereta Api
+Indonesia</span></span>
+                <span class="entry-meta">2021</span>
+            </div>
+            <div class="entry-desc">Implement Single Sign On, integrate
+with network gateway and internal app</div>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span><span class="entry-title">CMMI Dev
+Implementation</span> <span class="entry-org">- ICON+</span></span>
+                <span class="entry-meta">2018</span>
+            </div>
+            <div class="entry-desc">Help ICON+ to achieve CMMI Dev
+Maturity Level 3</div>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span><span class="entry-title">Application Architecture
+Best Practices</span> <span class="entry-org">- Jurnal.id</span></span>
+                <span class="entry-meta">2018</span>
+            </div>
+            <div class="entry-desc">Assess coding practices, review
+source code, provide improvement ideas</div>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span><span class="entry-title">CMMI Dev
+Implementation</span> <span class="entry-org">- Abhimata
+Persada</span></span>
+                <span class="entry-meta">2017</span>
+            </div>
+            <div class="entry-desc">Help Abhimata to achieve CMMI Dev
+Maturity Level 3</div>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span><span class="entry-title">CMMI Dev
+Implementation</span> <span class="entry-org">- Anabatic
+Technologies</span></span>
+                <span class="entry-meta">2015</span>
+            </div>
+            <div class="entry-desc">Help Anabatic to achieve CMMI Dev
+Maturity Level 3</div>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span><span class="entry-title">Java Application Best
+Practices</span> <span class="entry-org">- VeriTrans</span></span>
+                <span class="entry-meta">2013</span>
+            </div>
+            <div class="entry-desc">Reviews application architecture,
+provides insight on design best practices</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="entry">
+            <div class="entry-header">
+                <span><span class="entry-title">Islamic
+Economy</span> <span class="entry-org">@ Institut Agama Islam
+Tazkia</span></span>
+                <span class="entry-meta">2020 | Bogor</span>
+            </div>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span><span class="entry-title">Teknik
+Industri</span> <span class="entry-org">@ STT Telkom</span></span>
+                <span class="entry-meta">1997–2001 | Bandung</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        Last updated: 20260103
+    </footer>
+</body>
+</html>
