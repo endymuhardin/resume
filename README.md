@@ -1,58 +1,76 @@
 # Resume - Endy Muhardin
 
-LaTeX-based CV/Resume with data-driven content using YAML and Pandoc.
+Data-driven CV using YAML content + LaTeX/HTML templates with Pandoc.
+
+## Quick Start
+
+```bash
+# Build all formats
+./build.sh all
+
+# Build specific template
+./build.sh artivisi    # Custom Artivisi template (recommended)
+./build.sh moderncv    # ModernCV template
+./build.sh altacv      # AltaCV template
+./build.sh jakes       # Jake's Resume template
+./build.sh html        # HTML for GitHub Pages
+```
+
+## Output
+
+- `output/cv-endy-YYYYMMDD-artivisi.pdf` - Custom template (2 pages)
+- `output/cv-endy-YYYYMMDD-moderncv.pdf` - ModernCV (4 pages)
+- `output/cv-endy-YYYYMMDD-altacv.pdf` - AltaCV (3 pages)
+- `output/cv-endy-YYYYMMDD-jakes.pdf` - Jake's Resume (2 pages)
+- `index.html` - GitHub Pages version
 
 ## Prerequisites
 
 - Docker
-
-## Build
-
-```bash
-./build.sh
-```
-
-Output: `output/cv-endy.pdf`
 
 ## Project Structure
 
 ```
 .
 ├── src/
-│   ├── cv-data.yaml       # CV content (edit this)
-│   └── cv-template.tex    # LaTeX template (Pandoc syntax)
-├── output/                # Generated files (gitignored)
-│   ├── cv-endy.tex
-│   └── cv-endy.pdf
-├── build.sh               # Build script
-├── Dockerfile
+│   ├── cv-data.yaml              # CV content (edit this)
+│   ├── cv-template.tex           # ModernCV template
+│   └── templates/
+│       ├── artivisi/template.tex # Custom Artivisi template
+│       ├── altacv/               # AltaCV template + class
+│       ├── jakes/template.tex    # Jake's Resume template
+│       └── html/template.html    # HTML template
+├── output/                       # Generated PDFs
+├── index.html                    # Generated HTML
+├── build.sh                      # Build script
 └── README.md
 ```
 
 ## Editing Content
 
-Edit `src/cv-data.yaml` to update:
-- Personal info (`personal.*`)
-- Style options (`style.*`)
-- Professional summary (`summary`)
-- Core competencies (`skills`)
-- Work experience (`experience`)
-- Software projects (`software_development`)
-- Consulting engagements (`consulting`)
-- Training topics (`training_topics`)
-- Open source projects (`opensource`)
-- Publications (`writings`)
-- Education (`education`)
+Edit `src/cv-data.yaml`:
 
-## Changing Style
+| Section | Description |
+|---------|-------------|
+| `personal` | Name, title, contact info |
+| `summary` | Professional summary |
+| `skills` | Technical competencies |
+| `experience` | Work history |
+| `software_development` | Project portfolio |
+| `consulting` | Consulting engagements |
+| `training_topics` | Training expertise |
+| `education` | Academic background |
 
-Edit `style` section in `src/cv-data.yaml`:
+## Templates
 
-```yaml
-style:
-  theme: classic      # classic, casual, banking, oldstyle
-  color: red          # blue, orange, green, red, purple, grey, burgundy
-  last_update: "20250103"
-```
+| Template | Pages | Style | Best For |
+|----------|-------|-------|----------|
+| artivisi | 2 | Minimalist, brand colors | Primary/recommended |
+| moderncv | 4 | Classic professional | Detailed CV |
+| altacv | 3 | Two-column modern | Creative roles |
+| jakes | 2 | ATS-friendly minimal | Online applications |
 
-Font (Lato) is configured in the template.
+## GitHub Pages
+
+After pushing, enable GitHub Pages (Settings → Pages → Source: main) to serve at:
+`https://<username>.github.io/resume/`
