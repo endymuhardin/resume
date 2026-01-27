@@ -12,7 +12,7 @@ personal:
 style:
   theme: classic
   color: red
-  last_update: "20260103"
+  last_update: "20260126"
 
 summary: |
   IT Consultant with 20+ years of experience in software architecture,
@@ -22,10 +22,10 @@ summary: |
 
 skills:
   - category: Architecture
-    items: Microservices, REST API, Event-Driven, OAuth/SSO
+    items: Microservices, REST API, Event-Driven, Kafka, OAuth/SSO
 
   - category: Programming
-    items: Java, Spring Boot, Spring Cloud, Hibernate
+    items: Java, Spring Boot, Spring Cloud, Hibernate, Go
 
   - category: Payment Systems
     items: ISO-8583, Payment Gateway, ATM/EDC Integration
@@ -87,6 +87,20 @@ experience:
     description: Develop core banking application
 
 software_development:
+  - year: "2026"
+    project: Campus Website & Admission System
+    client: STMIK Tazkia
+    role: Software Architect, Lead Programmer
+    description: Marketing website with Astro SSG, admission portal with lead capture, applicant self-service, document review, payment verification via Kafka, WhatsApp notifications
+    tech: Go, Astro, Templ, HTMX, Alpine.js, Tailwind CSS, PostgreSQL, Kafka, Cloudflare Workers
+
+  - year: "2026"
+    project: Financial Management System
+    client: Yayasan Sahabat Quran
+    role: Software Architect, Lead Programmer
+    description: Foundation financial management with student/teacher master data, attendance tracking, salary calculation, operational expenses, reporting
+    tech: Go, HTMX, Alpine.js, Tailwind CSS, PostgreSQL, Playwright
+
   - year: "2025"
     project: High Availability SSO Infrastructure
     client: PT Kereta Api Indonesia
