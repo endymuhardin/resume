@@ -70,17 +70,27 @@ case $TEMPLATE in
     echo "Output: index.html"
     exit 0
     ;;
+  card)
+    docker run --rm \
+      -v "$(pwd)":/workspace \
+      -w /workspace \
+      texlive/texlive:latest \
+      sh -c "apt-get update -qq && apt-get install -y -qq pandoc && \
+             pandoc --metadata-file=src/cv-data.yaml --template=src/templates/card/template.html -o card.html /dev/null"
+    echo "Output: card.html"
+    exit 0
+    ;;
   all)
     echo "Building all templates..."
-    for t in artivisi moderncv altacv jakes html; do
+    for t in artivisi moderncv altacv jakes html card; do
       echo "=== Building $t ==="
       $0 $t || echo "Failed: $t"
     done
-    echo "Done. Check output/cv-endy-*.pdf and index.html"
+    echo "Done. Check output/cv-endy-*.pdf, index.html, and card.html"
     exit 0
     ;;
   *)
-    echo "Usage: $0 [artivisi|moderncv|awesome-cv|altacv|jakes|html|all]"
+    echo "Usage: $0 [artivisi|moderncv|awesome-cv|altacv|jakes|html|card|all]"
     exit 1
     ;;
 esac
