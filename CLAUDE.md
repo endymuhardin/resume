@@ -10,6 +10,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 # Build specific template
 ./build.sh artivisi    # Custom Artivisi template (recommended, 2 pages)
+./build.sh architect   # Solution Architect specialized CV (artivisi template)
 ./build.sh moderncv    # ModernCV template (4 pages)
 ./build.sh altacv      # AltaCV two-column (3 pages)
 ./build.sh jakes       # ATS-friendly minimal (2 pages)

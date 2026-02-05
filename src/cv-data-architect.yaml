@@ -1,0 +1,353 @@
+personal:
+  firstname: Endy
+  familyname: Muhardin
+  title: IT Consultant & Solution Architect
+  organization: ArtiVisi Intermedia
+  address:
+    city: Kabupaten Bogor
+    region: West Java, Indonesia
+  phone: "+62 812 98000 468"
+  email: endy@muhardin.com
+  homepage: software.endy.muhardin.com
+
+style:
+  theme: classic
+  color: red
+  last_update: "20260205"
+
+summary: |
+  Solution Architect with 20+ years of experience designing enterprise systems
+  across banking, payment, insurance, government, and education sectors.
+  Specialized in payment system architecture (ISO-8583), microservices and event-driven design,
+  high-availability infrastructure, and cross-system integration.
+  Led architecture for 16+ production systems and delivered 40+ corporate trainings on architecture topics.
+
+skills:
+  - category: Solution Architecture
+    items: System Design, Integration Patterns, High Availability, Event-Driven Architecture, Domain-Driven Design
+
+  - category: API & Integration
+    items: REST API, SOAP, ISO-8583, Kafka, OAuth/SSO, OpenID Connect, SAML
+
+  - category: Payment Systems
+    items: Payment Gateway, ATM/EDC Integration, Bank Switching, HSM, PIN Block
+
+  - category: Platform & Infrastructure
+    items: Docker, Kubernetes, HAProxy, Ansible, Pulumi, PostgreSQL Replication
+
+  - category: Programming
+    items: Java, Spring Boot, Spring Cloud, Go, Hibernate
+
+  - category: Security
+    items: Keycloak SSO, OWASP Top 10, SAST/DAST, AES-256, Certificate Management
+
+  - category: Process & Governance
+    items: CMMI, Scrum, Architecture Review, Quality Management
+
+experience:
+  - year: "2024--now"
+    organization: STMIK Tazkia
+    url: https://www.tazkia.ac.id
+    role: Vice Chairman, Lecturer
+    location: Bogor
+    description: Design campus-wide information system architecture, oversee curriculum and quality assurance
+
+  - year: "2008--now"
+    organization: ArtiVisi Intermedia
+    url: http://www.artivisi.com
+    role: Senior Consultant, Solution Architect
+    location: Jakarta
+    description: Design solution architecture for enterprise clients, evaluate technology stacks, lead implementation of payment systems, banking platforms, and integration solutions
+
+  - year: "2006--now"
+    organization: Brainmatics
+    url: http://www.brainmatics.com
+    role: Trainer
+    location: Jakarta
+    description: Deliver architecture and engineering training on microservices, payment systems, DevSecOps, and application security
+
+  - year: "2017--2024"
+    organization: Universitas Tazkia
+    url: https://www.tazkia.ac.id
+    role: IT Dept Head, Lecturer
+    location: Bogor
+    description: Architect and oversee campus information systems (academic, financial, HR), integrate multi-bank virtual account payment
+
+  - year: "2005--2008"
+    organization: BaliCamp
+    role: Software Engineering Process Group
+    description: "Architect organization-wide software development process and procedures compliant with CMMI requirements. Achieved CMMI ML-3 in 2007"
+
+  - year: "2004--2005"
+    organization: Telematics Indonesia
+    role: Lead Programmer
+    description: Design software architecture and implement client projects
+
+  - year: "2003--2004"
+    organization: Enciety
+    role: Software Architect, Lead Programmer
+    description: Evaluate and compare available tech stacks, select the most appropriate combination for core banking application, define and implement overall application structure, apply design patterns as required
+
+software_development:
+  - year: "2026"
+    project: Campus Website & Admission System
+    client: STMIK Tazkia
+    role: Solution Architect
+    description: Event-driven admission pipeline with Kafka message broker, Astro SSG marketing site, applicant self-service portal, document review workflow, asynchronous payment verification, WhatsApp notification integration
+    tech: Go, Astro, Templ, HTMX, Alpine.js, Tailwind CSS, PostgreSQL, Kafka, Cloudflare Workers
+
+  - year: "2025"
+    project: High Availability SSO Infrastructure
+    client: PT Kereta Api Indonesia
+    role: Solution Architect
+    description: Enterprise SSO architecture with Keycloak clustering, PostgreSQL streaming replication for failover, OpenLDAP federation for existing directory integration, HAProxy L7 load balancing with health checks, automated provisioning with Ansible
+    tech: Keycloak, PostgreSQL, OpenLDAP, HAProxy, Ansible, Docker
+
+  - year: "2025"
+    project: HSM Simulator
+    client: ArtiVisi Intermedia
+    role: Solution Architect
+    description: Hardware Security Module simulator architecture for payment training, PIN encryption/decryption with ISO-8583 PIN blocks, MAC generation and verification, key ceremony workflow, inter-bank key exchange protocol
+    tech: Java 21, Spring Boot, PostgreSQL, AES-256, ISO-8583 PIN Blocks
+
+  - year: "2025"
+    project: Sharia Banking System
+    client: ArtiVisi Intermedia
+    role: Solution Architect
+    description: Domain-driven banking architecture with Sharia-compliant financial products (Wadiah, Mudharabah savings), multi-level approval workflows, Islamic financing product engine, accounting integration
+    tech: Java 21, Spring Boot, PostgreSQL, Thymeleaf, Tailwind CSS
+
+  - year: "2025"
+    project: Accounting System
+    client: ArtiVisi Intermedia
+    role: Solution Architect
+    description: Modular accounting architecture with Indonesian tax compliance (PPN, PPh), payroll engine, fixed asset depreciation, inventory management, infrastructure-as-code deployment
+    tech: Spring Boot, PostgreSQL, Thymeleaf, HTMX, Alpine.js, ZAP DAST, Ansible, Pulumi
+
+  - year: "2026"
+    project: Financial Management System
+    client: Yayasan Sahabat Quran
+    role: Solution Architect
+    description: Foundation financial system with master data management (students, teachers), attendance tracking, salary calculation engine, operational expense workflows, reporting module
+    tech: Go, HTMX, Alpine.js, Tailwind CSS, PostgreSQL, Playwright
+
+  - year: "2024"
+    project: Islamic Education Management
+    client: Yayasan Sahabat Quran
+    role: Solution Architect
+    description: Education platform architecture with student registration flow, class scheduling engine, academic planning module, performance analytics dashboard
+    tech: Spring Boot, PostgreSQL, Thymeleaf, Bootstrap
+
+  - year: "2023"
+    project: Sharia Insurance Onboarding
+    client: Client Undisclosed
+    role: Solution Architect
+    description: Insurance onboarding architecture with customer registration, underwriting rule engine, payment gateway integration via SOAP web services
+    tech: Java, Spring, Microservice, SOAP
+
+  - year: "2022"
+    project: Seaport Management System
+    client: Pelabuhan Tiga Bersaudara
+    role: Solution Architect
+    description: Port operations architecture integrating pilotage management, Kemenhub (Ministry of Transport) application interface, bank payment settlement
+    tech: Java, Spring, Microservice, SOAP
+
+  - year: "2018"
+    project: Virtual Account Integration
+    client: STEI Tazkia
+    role: Solution Architect
+    description: Multi-bank payment integration architecture connecting 3 bank virtual account systems (BSM, BNI, CIMB) with unified reconciliation
+    tech: Java, Spring, Microservice, REST, SOAP
+
+  - year: "2017"
+    project: Academic Information System
+    client: STEI Tazkia
+    role: Solution Architect
+    description: Microservices architecture for campus system with OAuth-based SSO, modules for enrollment, tuition payment, academic administration, and HR
+    tech: Java, Spring, Microservice, OAuth
+
+  - year: "2013"
+    project: Payment Switching System
+    client: ArtiVisi Intermedia
+    role: Solution Architect
+    description: Payment switch architecture routing ISO-8583 transactions across multiple payment endpoints, message transformation, connection pooling, transaction logging and reconciliation
+    tech: Java, ISO-8583
+
+  - year: "2011"
+    project: Payment Gateway System
+    client: ArtiVisi Intermedia
+    role: Solution Architect
+    description: Payment gateway architecture with front-office POS interface and back-office settlement system for billing payment outlets, ISO-8583 message handling
+    tech: HTML, JavaScript, Java, ISO-8583
+
+  - year: "2010"
+    project: EDC Server
+    client: G4S Euronet
+    role: Solution Architect
+    description: Server architecture for managing fleet of EDC (Electronic Data Capture) devices, device provisioning, transaction routing, ISO-8583 protocol handling
+    tech: Java, ISO-8583
+
+  - year: "2008"
+    project: ATM Integration
+    client: Bank Windu Kencana Indonesia
+    client_url: http://www.bankwindu.com/
+    role: Solution Architect
+    description: Integration architecture connecting core banking application to ATM BCA network via ISO-8583, transaction mapping, error handling, reconciliation
+    tech: Java, Spring Framework, Hibernate, ISO-8583
+
+  - year: "2003"
+    project: Core Banking Application
+    client: Enciety
+    role: Solution Architect
+    description: Evaluate and compare available tech stacks, select Java Servlet + Velocity + Hibernate as the optimal combination, define overall application structure, implement design patterns for transaction processing, account management, and reporting modules
+    tech: Java Servlet, Velocity Template Engine, Hibernate ORM
+
+consulting:
+  - year: "2023"
+    client: Lembaga Administrasi Negara
+    client_url: https://www.lan.go.id/
+    topic: DevOps Architecture
+    description: Assess and redesign internal DevOps pipeline architecture to follow industry best practices
+    tech: DevOps, Continuous Integration/Delivery
+
+  - year: "2022"
+    client: PT Telkomsel
+    client_url: https://www.telkomsel.com/
+    topic: Software Engineer Competence Standard
+    description: Design corporate-wide competence framework and assessment standard for software engineers
+    tech: Engineering Management, Skill and Competence
+
+  - year: "2021"
+    client: PT Kereta Api Indonesia
+    client_url: https://www.kai.id/
+    topic: Enterprise SSO Architecture
+    description: Design and implement enterprise Single Sign On architecture, integrate with network gateway and internal applications
+    tech: Keycloak, Single Sign On, OAuth, OpenID Connect, SAML
+
+  - year: "2018"
+    client: ICON+
+    client_url: http://www.iconpln.co.id/
+    topic: CMMI Dev Implementation
+    description: Help ICON+ to achieve CMMI Dev Maturity Level 3
+    tech: CMMI, Process Improvement, Quality Management
+
+  - year: "2018"
+    client: Jurnal.id
+    client_url: https://jurnal.id/
+    topic: Application Architecture Assessment
+    description: Assess application architecture, review source code for structural issues, provide architecture improvement roadmap
+    tech: Java, Code Review, Architecture Improvement
+
+  - year: "2017"
+    client: Abhimata Persada
+    client_url: http://www.ptap.co.id/
+    topic: CMMI Dev Implementation
+    description: Help Abhimata to achieve CMMI Dev Maturity Level 3
+    tech: CMMI, Scrum, Process Improvement
+
+  - year: "2015"
+    client: Anabatic Technologies
+    client_url: https://www.anabatic.com/
+    topic: CMMI Dev Implementation
+    description: Help Anabatic to achieve CMMI Dev Maturity Level 3
+    tech: CMMI, Scrum, Process Improvement
+
+  - year: "2013"
+    client: VeriTrans
+    client_url: https://www.veritrans.co.id/
+    topic: Application Architecture Review
+    description: Review application architecture, assess design patterns, provide recommendations on structural improvements
+    tech: Java, Maven, Spring Data JPA
+
+training_topics:
+  - topic: Microservices Architecture
+    description: Spring Cloud, API Gateway, Service Discovery, Config Server, Circuit Breaker
+    clients: Bank BCA, Blanja.com, Generali Insurance, Chubb Insurance
+
+  - topic: Payment Systems (ISO-8583)
+    description: Payment Gateway Architecture, ATM/EDC Integration, Bank Switching, Spring Boot + jPOS
+    clients: Bank BCA, Visionet Data Internasional, Induk Koperasi Kredit
+
+  - topic: Application Security
+    description: OWASP Top 10, SAST (SpotBugs, CodeQL), DAST (OWASP ZAP), OAuth 2.0, SSO Architecture
+    clients: MTI/Yokke, Indonesian Government, Direktorat Jenderal Pajak
+
+  - topic: DevSecOps & Kubernetes
+    description: Docker, Kubernetes, CI/CD Pipeline Architecture, SAST/DAST Integration, Security Scanning
+    clients: Ditjen Bea Cukai, Asuransi Kredit Indonesia, Bank BCA
+
+  - topic: Site Reliability Engineering
+    description: SRE Fundamentals, Linux Administration, Docker, High Availability Architecture, Incident Response
+    clients: ArtaJasa
+
+  - topic: Java & Spring Framework
+    description: Spring Boot, Spring Security, JPA, REST API, Reactive Programming
+    clients: TelkomSigma, Bank Jateng, Doku, eBDesk, Pegadaian, Ministry of Finance
+
+  - topic: Automated Testing
+    description: Selenium, Functional Testing, Test Automation
+    clients: Kemenkominfo, Brainmatics
+
+  - topic: CMMI & Process Improvement
+    description: CMMI Dev, SCAMPI-A, Process Definition, Quality Management
+    clients: Anabatic, Brainmatics, Traspac
+
+opensource:
+  - name: Campus Application Suite
+    url: http://gitlab.com/tazkia.ac.id
+    description: Campus Administration, HRIS, Finance, Accounting, Enrollment, etc
+    platform: Java, MySQL, PostgreSQL, Kafka
+    framework: Spring Boot, Spring Cloud
+    role: Project Owner, Software Architect, Lead Programmer
+
+  - name: Biller Simulator
+    url: http://github.com/artivisi/biller-simulator
+    description: Simulator for bill payment system
+    platform: Java, Tomcat, MySQL
+    framework: Java, JSF, JPOS, ISO-8583
+    role: Project Owner, Lead Programmer
+
+  - name: Web Application Template
+    url: http://github.com/artivisi/standard-webapp-archetype
+    description: Application generator for Java web application
+    platform: Java, Tomcat, MySQL
+    framework: Java, Spring Data JPA, Hibernate, Maven
+    role: Project Owner, Lead Programmer
+
+  - name: PlaySMS
+    url: http://playsms.org
+    description: SMS Gateway Management
+    platform: Linux, Windows, MySQL
+    language: PHP
+    role: Committer
+
+writings:
+  - year: "2012"
+    publisher: ArtiVisi Intermedia
+    title: Markdown dan Pandoc
+    url: https://sites.google.com/site/endymuhardin/markdown-dan-pandoc.pdf?attredirects=0&d=1
+    description: Using markdown format and pandoc for authoring books and presentations
+
+  - year: "2009"
+    publisher: ArtiVisi Intermedia
+    title: Minibook Log4j
+    url: https://sites.google.com/site/endymuhardin/minibook-log4j.pdf?attredirects=0&d=1
+    description: Application logging concepts and implementation using Log4J
+
+  - year: "2009"
+    publisher: ArtiVisi Intermedia
+    title: Konsep dan Penggunaan Subversion
+    description: Version control concepts, use cases, and implementation using Subversion
+
+education:
+  - year: "2020"
+    degree: Islamic Economy
+    institution: Institut Agama Islam Tazkia
+    location: Bogor
+    grade: Magister Ekonomi
+
+  - year: "1997--2001"
+    degree: Teknik Industri
+    institution: STT Telkom
+    location: Bandung
+    grade: Sarjana Teknik

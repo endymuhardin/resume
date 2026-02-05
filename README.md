@@ -10,6 +10,7 @@ Data-driven CV using YAML content + LaTeX/HTML templates with Pandoc.
 
 # Build specific template
 ./build.sh artivisi    # Custom Artivisi template (recommended)
+./build.sh architect   # Solution Architect specialized CV
 ./build.sh moderncv    # ModernCV template
 ./build.sh altacv      # AltaCV template
 ./build.sh jakes       # Jake's Resume template
