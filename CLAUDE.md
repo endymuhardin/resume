@@ -14,6 +14,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ./build.sh altacv      # AltaCV two-column (3 pages)
 ./build.sh jakes       # ATS-friendly minimal (2 pages)
 ./build.sh html        # GitHub Pages version → index.html
+./build.sh card        # Digital business card → card.html
 ```
 
 Requires Docker. Outputs go to `output/cv-endy-YYYYMMDD-<template>.pdf`.

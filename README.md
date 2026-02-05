@@ -14,6 +14,7 @@ Data-driven CV using YAML content + LaTeX/HTML templates with Pandoc.
 ./build.sh altacv      # AltaCV template
 ./build.sh jakes       # Jake's Resume template
 ./build.sh html        # HTML for GitHub Pages
+./build.sh card        # Digital business card
 ```
 
 ## Output
@@ -23,6 +24,7 @@ Data-driven CV using YAML content + LaTeX/HTML templates with Pandoc.
 - `output/cv-endy-YYYYMMDD-altacv.pdf` - AltaCV (3 pages)
 - `output/cv-endy-YYYYMMDD-jakes.pdf` - Jake's Resume (2 pages)
 - `index.html` - GitHub Pages version
+- `card.html` - Digital business card (standalone)
 
 ## Prerequisites
 
@@ -39,9 +41,11 @@ Data-driven CV using YAML content + LaTeX/HTML templates with Pandoc.
 │       ├── artivisi/template.tex # Custom Artivisi template
 │       ├── altacv/               # AltaCV template + class
 │       ├── jakes/template.tex    # Jake's Resume template
-│       └── html/template.html    # HTML template
+│       ├── html/template.html    # HTML template
+│       └── card/template.html   # Business card template
 ├── output/                       # Generated PDFs
 ├── index.html                    # Generated HTML
+├── card.html                     # Generated business card
 ├── build.sh                      # Build script
 └── README.md
 ```
@@ -69,6 +73,7 @@ Edit `src/cv-data.yaml`:
 | moderncv | 4 | Classic professional | Detailed CV |
 | altacv | 3 | Two-column modern | Creative roles |
 | jakes | 2 | ATS-friendly minimal | Online applications |
+| card | 1 | Digital business card | Sharing, networking |
 
 ## GitHub Pages
 
