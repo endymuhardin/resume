@@ -43,13 +43,13 @@
 
 % Section formatting - clean line with accent color
 \titleformat{\section}
-    {\vspace{0.5em}\large\bfseries\color{primary}}
+    {\vspace{0.3em}\large\bfseries\color{primary}}
     {}
     {0pt}
     {}
-    [\vspace{0.1em}{\color{accent}\hrule height 1.5pt}\vspace{0.3em}]
+    [\vspace{0.1em}{\color{accent}\hrule height 1.5pt}\vspace{0.2em}]
 
-\titlespacing*{\section}{0pt}{0.8em}{0.4em}
+\titlespacing*{\section}{0pt}{0.5em}{0.2em}
 
 % Custom commands
 \newcommand{\cvheader}[6]{%
@@ -74,12 +74,12 @@
 
 \newcommand{\cventry}[4]{%
     \textbf{#1} {\color{primary}|} \textit{#2} \hfill {\small\color{lightgray}#3}\\[-0.2em]
-    {\small\color{darkgray}#4}\\[0.4em]
+    {\small\color{darkgray}#4}\\[0.2em]
 }
 
 \newcommand{\cvproject}[4]{%
     \textbf{#1} {\small\color{medgray}-- #2} \hfill {\small\color{lightgray}#3}\\[-0.2em]
-    {\small\color{darkgray}#4}\\[0.4em]
+    {\small\color{darkgray}#4}\\[0.2em]
 }
 
 \newcommand{\cvskill}[2]{%
@@ -87,12 +87,12 @@
 }
 
 \newcommand{\cvconsult}[3]{%
-    \textbf{#1} {\small\color{medgray}-- #2} \hfill {\small\color{lightgray}#3}\\[0.3em]
+    {\small\textbf{#1} {\color{medgray}-- #2} \hfill {\color{lightgray}#3}}\\[0.15em]
 }
 
 \newcommand{\cvedu}[4]{%
     \textbf{#1} \hfill {\small\color{lightgray}#3}\\[-0.2em]
-    {\small\textit{#2} \hfill \color{lightgray}#4}\\[0.3em]
+    {\small\textit{#2} \hfill \color{lightgray}#4}\\[0.2em]
 }
 
 \newcommand{\cvtraining}[3]{%
@@ -147,11 +147,14 @@ $for(training_topics)$
 $endfor$
 \end{multicols}
 
-% Consulting
+% Consulting - Compact two-column list
 \section{CONSULTING ENGAGEMENTS}
+\begin{multicols}{2}
+\raggedright
 $for(consulting)$
 \cvconsult{$consulting.topic$}{$consulting.client$}{$consulting.year$}
 $endfor$
+\end{multicols}
 
 % Education
 \section{EDUCATION}
@@ -159,7 +162,7 @@ $for(education)$
 \cvedu{$education.degree$}{$education.institution$}{$education.year$}{$education.location$}
 $endfor$
 
-\vfill
+\vspace{0.5em}
 \begin{center}
 {\scriptsize\color{lightgray} Last updated: $style.last_update$}
 \end{center}

@@ -1,9 +1,9 @@
 #!/bin/bash
 set -e
 
-TEMPLATE=${1:-moderncv}
+TEMPLATE=${1:-artivisi}
 DATE=$(date +%Y%m%d)
-OUTPUT_NAME="cv-endy-${DATE}-${TEMPLATE}.pdf"
+OUTPUT_NAME="cv-endy-${DATE}.pdf"
 
 echo "Building with template: $TEMPLATE"
 
@@ -61,6 +61,7 @@ case $TEMPLATE in
              rm -f cv-endy.aux cv-endy.log cv-endy.out cv-endy.tex"
     ;;
   architect)
+    OUTPUT_NAME="cv-endy-${DATE}-architect.pdf"
     docker run --rm \
       -v "$(pwd)":/workspace \
       -w /workspace \
