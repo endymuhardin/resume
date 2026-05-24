@@ -252,6 +252,10 @@ consulting:
     tech: Java, Maven, Spring Data JPA
 
 training_topics:
+  - topic: Generative AI for Business Productivity
+    description: Claude & LLM Agents, Prompt Engineering, AI-Assisted Research, Prospect Profiling, Document Automation, Portfolio Monitoring
+    clients: Bank Syariah Indonesia
+
   - topic: Site Reliability Engineering
     description: SRE Fundamentals, Linux Administration, Docker, High Availability, Incident Response
     clients: ArtaJasa
